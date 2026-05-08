@@ -92,19 +92,30 @@ export default function Home() {
 
       {/* ── HERO ──────────────────────────────────────────── */}
       <section className={styles.heroSection} style={{ padding: '80px 24px 60px', textAlign: 'center', maxWidth: 720, margin: '0 auto' }}>
-        <div style={{ fontSize: 11, fontWeight: 700, letterSpacing: 2.5, textTransform: 'uppercase', color: '#6db88a', marginBottom: 16 }}>💊 GLP-1 MUSCLE GUARD</div>
+        <div style={{ fontSize: 11, fontWeight: 700, letterSpacing: 2.5, textTransform: 'uppercase', color: '#c8a96e', marginBottom: 16 }}>AI-POWERED FITNESS & NUTRITION</div>
         <h1 style={{ fontSize: 'clamp(32px, 6vw, 56px)', fontWeight: 900, lineHeight: 1.1, marginBottom: 20, color: '#fff' }}>
-          Losing weight on <span style={{ color: '#6db88a' }}>Ozempic</span>?<br />Keep the muscle.
+          Your body. Your plan.<br /><span style={{ color: '#c8a96e' }}>Built in minutes.</span>
         </h1>
         <p style={{ fontSize: 16, color: 'rgba(255,255,255,0.5)', lineHeight: 1.7, marginBottom: 32, maxWidth: 540, margin: '0 auto 32px' }}>
-          Up to 40% of weight lost on GLP-1 meds can be muscle. Get a free AI training plan built to preserve it—3× full-body per week, high protein, optimized for low-energy days.
+          Fully personalized training and nutrition plans generated from your exact stats. Progressive overload, macro targets, AI coaching. 100% free to start.
         </p>
-        <Link to="/form/glp1" style={{ display: 'inline-block', padding: '16px 40px', borderRadius: 50, background: 'linear-gradient(135deg,#4a9e68,#6db88a)', color: '#fff', fontSize: 14, fontWeight: 800, letterSpacing: 1, textDecoration: 'none', boxShadow: '0 8px 28px rgba(100,180,130,0.35)', transition: 'transform 0.2s' }}
-          onMouseEnter={e => e.currentTarget.style.transform = 'translateY(-2px)'}
-          onMouseLeave={e => e.currentTarget.style.transform = 'translateY(0)'}>
-          Get My Free GLP-1 Plan →
-        </Link>
+        <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap', marginBottom: 16 }}>
+          <Link to="/form/training" style={{ display: 'inline-block', padding: '16px 40px', borderRadius: 50, background: 'linear-gradient(135deg,#b8922e,#c8a96e)', color: '#0a0a0a', fontSize: 14, fontWeight: 800, letterSpacing: 1, textDecoration: 'none', boxShadow: '0 8px 28px rgba(200,169,110,0.35)', transition: 'transform 0.2s' }}
+            onMouseEnter={e => e.currentTarget.style.transform = 'translateY(-2px)'}
+            onMouseLeave={e => e.currentTarget.style.transform = 'translateY(0)'}>
+            Get My Training Plan →
+          </Link>
+          <Link to="/form/nutrition" style={{ display: 'inline-block', padding: '16px 40px', borderRadius: 50, background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(200,169,110,0.3)', color: '#c8a96e', fontSize: 14, fontWeight: 800, letterSpacing: 1, textDecoration: 'none', transition: 'all 0.2s' }}
+            onMouseEnter={e => { e.currentTarget.style.background = 'rgba(200,169,110,0.12)'; e.currentTarget.style.transform = 'translateY(-2px)' }}
+            onMouseLeave={e => { e.currentTarget.style.background = 'rgba(255,255,255,0.06)'; e.currentTarget.style.transform = 'translateY(0)' }}>
+            Get My Nutrition Plan
+          </Link>
+        </div>
         <div style={{ marginTop: 20, fontSize: 11, color: 'rgba(255,255,255,0.25)', letterSpacing: 0.5 }}>No subscription · Delivered in 1-5 minutes</div>
+        <div style={{ marginTop: 24, padding: '12px 20px', borderRadius: 10, background: 'rgba(109,184,138,0.08)', border: '1px solid rgba(109,184,138,0.2)', display: 'inline-block' }}>
+          <span style={{ fontSize: 11, fontWeight: 700, color: '#6db88a', letterSpacing: 1 }}>💊 On GLP-1 meds? </span>
+          <Link to="/form/glp1" style={{ fontSize: 11, color: '#6db88a', textDecoration: 'none', borderBottom: '1px solid rgba(109,184,138,0.4)', fontWeight: 600 }}>View Muscle Guard Plans →</Link>
+        </div>
       </section>
 
       {/* ── STATS BAR ─────────────────────────────────── */}
