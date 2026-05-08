@@ -90,8 +90,22 @@ export default function Home() {
     <div className={styles.page}>
       <Navbar />
 
-      {/* ── SCROLL HERO ──────────────────────────────────── */}
-      <HeroScroll trainingPath="/form/training" nutritionPath="/form/nutrition" glp1Path="/form/glp1" glp1NutritionPath="/form/glp1-nutrition" />
+      {/* ── HERO ──────────────────────────────────────────── */}
+      <section className={styles.heroSection} style={{ padding: '80px 24px 60px', textAlign: 'center', maxWidth: 720, margin: '0 auto' }}>
+        <div style={{ fontSize: 11, fontWeight: 700, letterSpacing: 2.5, textTransform: 'uppercase', color: '#6db88a', marginBottom: 16 }}>💊 GLP-1 MUSCLE GUARD</div>
+        <h1 style={{ fontSize: 'clamp(32px, 6vw, 56px)', fontWeight: 900, lineHeight: 1.1, marginBottom: 20, color: '#fff' }}>
+          Losing weight on <span style={{ color: '#6db88a' }}>Ozempic</span>?<br />Keep the muscle.
+        </h1>
+        <p style={{ fontSize: 16, color: 'rgba(255,255,255,0.5)', lineHeight: 1.7, marginBottom: 32, maxWidth: 540, margin: '0 auto 32px' }}>
+          Up to 40% of weight lost on GLP-1 meds can be muscle. Get a free AI training plan built to preserve it—3× full-body per week, high protein, optimized for low-energy days.
+        </p>
+        <Link to="/form/glp1" style={{ display: 'inline-block', padding: '16px 40px', borderRadius: 50, background: 'linear-gradient(135deg,#4a9e68,#6db88a)', color: '#fff', fontSize: 14, fontWeight: 800, letterSpacing: 1, textDecoration: 'none', boxShadow: '0 8px 28px rgba(100,180,130,0.35)', transition: 'transform 0.2s' }}
+          onMouseEnter={e => e.currentTarget.style.transform = 'translateY(-2px)'}
+          onMouseLeave={e => e.currentTarget.style.transform = 'translateY(0)'}>
+          Get My Free GLP-1 Plan →
+        </Link>
+        <div style={{ marginTop: 20, fontSize: 11, color: 'rgba(255,255,255,0.25)', letterSpacing: 0.5 }}>No subscription · Delivered in 1-5 minutes</div>
+      </section>
 
       {/* ── STATS BAR ─────────────────────────────────── */}
       <div className={styles.statsBar}>
