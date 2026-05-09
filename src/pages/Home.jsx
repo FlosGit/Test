@@ -92,19 +92,31 @@ export default function Home() {
 
       {/* ── HERO ──────────────────────────────────────────── */}
       <section className={styles.heroSection} style={{ padding: '80px 24px 60px', textAlign: 'center', maxWidth: 720, margin: '0 auto' }}>
-        <div style={{ fontSize: 11, fontWeight: 700, letterSpacing: 2.5, textTransform: 'uppercase', color: '#6db88a', marginBottom: 16 }}>💊 GLP-1 MUSCLE GUARD</div>
+        <div style={{ fontSize: 11, fontWeight: 700, letterSpacing: 2.5, textTransform: 'uppercase', color: '#c8a96e', marginBottom: 16 }}>AI-POWERED FITNESS PLANS</div>
         <h1 style={{ fontSize: 'clamp(32px, 6vw, 56px)', fontWeight: 900, lineHeight: 1.1, marginBottom: 20, color: '#fff' }}>
-          Losing weight on <span style={{ color: '#6db88a' }}>Ozempic</span>?<br />Keep the muscle.
+          Your body. Your plan.<br />Built by <span style={{ color: '#c8a96e' }}>AI</span>.
         </h1>
         <p style={{ fontSize: 16, color: 'rgba(255,255,255,0.5)', lineHeight: 1.7, marginBottom: 32, maxWidth: 540, margin: '0 auto 32px' }}>
-          Up to 40% of weight lost on GLP-1 meds can be muscle. Get a free AI training plan built to preserve it—3× full-body per week, high protein, optimized for low-energy days.
+          Personalized training and nutrition plans generated from your exact stats. Progressive overload, macro targets, AI coaching—delivered in minutes. Free to start.
         </p>
-        <Link to="/form/glp1" style={{ display: 'inline-block', padding: '16px 40px', borderRadius: 50, background: 'linear-gradient(135deg,#4a9e68,#6db88a)', color: '#fff', fontSize: 14, fontWeight: 800, letterSpacing: 1, textDecoration: 'none', boxShadow: '0 8px 28px rgba(100,180,130,0.35)', transition: 'transform 0.2s' }}
-          onMouseEnter={e => e.currentTarget.style.transform = 'translateY(-2px)'}
-          onMouseLeave={e => e.currentTarget.style.transform = 'translateY(0)'}>
-          Get My Free GLP-1 Plan →
-        </Link>
+        <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
+          <Link to="/form/training" style={{ display: 'inline-block', padding: '16px 40px', borderRadius: 50, background: 'linear-gradient(135deg,#b8922e,#c8a96e)', color: '#0a0a0a', fontSize: 14, fontWeight: 800, letterSpacing: 1, textDecoration: 'none', boxShadow: '0 8px 28px rgba(200,169,110,0.35)', transition: 'transform 0.2s' }}
+            onMouseEnter={e => e.currentTarget.style.transform = 'translateY(-2px)'}
+            onMouseLeave={e => e.currentTarget.style.transform = 'translateY(0)'}>
+            Get My Training Plan →
+          </Link>
+          <Link to="/form/nutrition" style={{ display: 'inline-block', padding: '16px 40px', borderRadius: 50, background: 'transparent', border: '1px solid rgba(200,169,110,0.35)', color: '#c8a96e', fontSize: 14, fontWeight: 800, letterSpacing: 1, textDecoration: 'none', transition: 'all 0.2s' }}
+            onMouseEnter={e => { e.currentTarget.style.background = 'rgba(200,169,110,0.08)'; e.currentTarget.style.borderColor = 'rgba(200,169,110,0.5)' }}
+            onMouseLeave={e => { e.currentTarget.style.background = 'transparent'; e.currentTarget.style.borderColor = 'rgba(200,169,110,0.35)' }}>
+            Get My Nutrition Plan
+          </Link>
+        </div>
         <div style={{ marginTop: 20, fontSize: 11, color: 'rgba(255,255,255,0.25)', letterSpacing: 0.5 }}>No subscription · Delivered in 1-5 minutes</div>
+        <div style={{ marginTop: 32, padding: '12px 20px', borderRadius: 10, background: 'rgba(109,184,138,0.06)', border: '1px solid rgba(109,184,138,0.15)', maxWidth: 540, margin: '32px auto 0' }}>
+          <div style={{ fontSize: 10, fontWeight: 700, letterSpacing: 2, textTransform: 'uppercase', color: '#6db88a', marginBottom: 6 }}>💊 ON GLP-1 MEDICATION?</div>
+          <div style={{ fontSize: 13, color: 'rgba(255,255,255,0.5)', marginBottom: 10 }}>Get a plan built to preserve muscle while on Ozempic/Wegovy — optimized for low-energy days.</div>
+          <Link to="/form/glp1" style={{ color: '#6db88a', fontSize: 12, fontWeight: 700, textDecoration: 'none' }}>View GLP-1 Plans →</Link>
+        </div>
       </section>
 
       {/* ── STATS BAR ─────────────────────────────────── */}
