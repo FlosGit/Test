@@ -270,7 +270,7 @@ export default function HeroScroll({ trainingPath, nutritionPath, glp1Path, glp1
               <div style={{
                 fontSize:'clamp(10px,1.1vw,12px)', fontWeight:300, letterSpacing:'2px',
                 color:'rgba(200,169,110,0.6)', animation:'fadeUp 1.1s ease 1.1s both',
-              }}>AI-powered fitness &amp; nutrition</div>
+              }}>AI-powered fitness &amp; nutrition — now with GLP-1 muscle preservation plans</div>
             </div>
           </div>
 
