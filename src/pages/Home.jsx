@@ -104,7 +104,8 @@ export default function Home() {
           onMouseLeave={e => e.currentTarget.style.transform = 'translateY(0)'}>
           Get My Free GLP-1 Plan →
         </Link>
-        <div style={{ marginTop: 20, fontSize: 11, color: 'rgba(255,255,255,0.25)', letterSpacing: 0.5 }}>No subscription · Delivered in 1-5 minutes</div>
+                  <div style={{ marginTop: 20, fontSize: 11, color: 'rgba(255,255,255,0.25)', letterSpacing: 0.5 }}>No subscription · Delivered in 1-5 minutes</div>
+          <Link to="/plan/demo" style={{ display: 'block', marginTop: 12, fontSize: 10, color: 'rgba(200,169,110,0.4)', textDecoration: 'none', letterSpacing: 0.8, transition: 'color 0.2s' }} onMouseEnter={e => e.currentTarget.style.color = 'rgba(200,169,110,0.7)'} onMouseLeave={e => e.currentTarget.style.color = 'rgba(200,169,110,0.4)'}>View sample plan →</Link>
       </section>
 
       {/* ── STATS BAR ─────────────────────────────────── */}
