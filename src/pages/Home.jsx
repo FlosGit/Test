@@ -96,8 +96,11 @@ export default function Home() {
         <h1 style={{ fontSize: 'clamp(32px, 6vw, 56px)', fontWeight: 900, lineHeight: 1.1, marginBottom: 20, color: '#fff' }}>
           Losing weight on <span style={{ color: '#6db88a' }}>Ozempic</span>?<br />Keep the muscle.
         </h1>
-        <p style={{ fontSize: 16, color: 'rgba(255,255,255,0.5)', lineHeight: 1.7, marginBottom: 32, maxWidth: 540, margin: '0 auto 32px' }}>
-          Up to 40% of weight lost on GLP-1 meds can be muscle. Get a free AI training plan built to preserve it—3× full-body per week, high protein, optimized for low-energy days.
+        <p style={{ fontSize: 16, color: 'rgba(255,255,255,0.5)', lineHeight: 1.7, marginBottom: 24, maxWidth: 540, margin: '0 auto 24px' }}>
+          Clinical studies show up to 40% of weight lost on GLP-1 medications is muscle mass — not fat. Losing muscle slows your metabolism, weakens your body, and reverses the health gains you're working for.
+        </p>
+        <p style={{ fontSize: 15, color: 'rgba(255,255,255,0.65)', lineHeight: 1.7, marginBottom: 32, maxWidth: 540, margin: '0 auto 32px', fontWeight: 600 }}>
+          This free plan is built to stop that. 3× full-body resistance training per week, high-protein nutrition, and a weekly Muscle Preservation Score that tracks your progress in real time.
         </p>
         <Link to="/form/glp1" style={{ display: 'inline-block', padding: '16px 40px', borderRadius: 50, background: 'linear-gradient(135deg,#4a9e68,#6db88a)', color: '#fff', fontSize: 14, fontWeight: 800, letterSpacing: 1, textDecoration: 'none', boxShadow: '0 8px 28px rgba(100,180,130,0.35)', transition: 'transform 0.2s' }}
           onMouseEnter={e => e.currentTarget.style.transform = 'translateY(-2px)'}
