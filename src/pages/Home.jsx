@@ -107,6 +107,17 @@ export default function Home() {
         <div style={{ marginTop: 20, fontSize: 11, color: 'rgba(255,255,255,0.25)', letterSpacing: 0.5 }}>No subscription · Delivered in 1-5 minutes</div>
       </section>
 
+      {/* ── TRUST BAR (moved above hero) ───────────── */}
+      <div style={{ background:'rgba(200,169,110,0.03)', borderBottom:'1px solid rgba(200,169,110,0.1)', padding:'12px 24px' }}>
+        <div style={{ maxWidth:860, margin:'0 auto', display:'flex', alignItems:'center', justifyContent:'center', gap:'clamp(16px,4vw,40px)', flexWrap:'wrap', fontSize:'clamp(9px,1.8vw,11px)', color:'rgba(255,255,255,0.35)', fontWeight:600, letterSpacing:'0.8px', textTransform:'uppercase' }}>
+          <span style={{ display:'flex', alignItems:'center', gap:6 }}><span style={{ color:'#6db88a', fontSize:14 }}>✓</span> Evidence-Based Protocols</span>
+          <span style={{ color:'rgba(255,255,255,0.12)' }}>·</span>
+          <span style={{ display:'flex', alignItems:'center', gap:6 }}><span style={{ color:'#6db88a', fontSize:14 }}>✓</span> {planCount !== null ? `${planCount.toLocaleString()}+ Plans Delivered` : 'Trusted by Athletes'}</span>
+          <span style={{ color:'rgba(255,255,255,0.12)' }}>·</span>
+          <span style={{ display:'flex', alignItems:'center', gap:6 }}><span style={{ color:'#6db88a', fontSize:14 }}>✓</span> Built on Published Research</span>
+        </div>
+      </div>
+
       {/* ── STATS BAR ─────────────────────────────────── */}
       <div className={styles.statsBar}>
         <div className={styles.statItem}>
