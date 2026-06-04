@@ -90,6 +90,26 @@ export default function Home() {
     <div className={styles.page}>
       <Navbar />
 
+      {/* ── STATS BAR (moved above hero for credibility) ──────────────────────────────────────────── */}
+      <div className={styles.statsBar}>
+        <div className={styles.statItem}>
+          <span className={styles.statNum}>
+            {planCount !== null ? planCount.toLocaleString() : '—'}
+          </span>
+          <span className={styles.statLabel}>Plans Delivered</span>
+        </div>
+        <div className={styles.statDivider} />
+        <div className={styles.statItem}>
+          <span className={styles.statNum}>{'< 3 min'}</span>
+          <span className={styles.statLabel}>Avg. Delivery Time</span>
+        </div>
+        <div className={styles.statDivider} />
+        <div className={styles.statItem}>
+          <span className={styles.statNum}>100%</span>
+          <span className={styles.statLabel}>Individually Built</span>
+        </div>
+      </div>
+
       {/* ── HERO ──────────────────────────────────────────── */}
       <section className={styles.heroSection} style={{ padding: '80px 24px 60px', textAlign: 'center', maxWidth: 720, margin: '0 auto' }}>
         <div style={{ fontSize: 11, fontWeight: 700, letterSpacing: 2.5, textTransform: 'uppercase', color: '#6db88a', marginBottom: 16 }}>💊 GLP-1 MUSCLE GUARD</div>
