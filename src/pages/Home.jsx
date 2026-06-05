@@ -107,8 +107,8 @@ export default function Home() {
         <div style={{ marginTop: 20, fontSize: 11, color: 'rgba(255,255,255,0.25)', letterSpacing: 0.5 }}>No subscription · Delivered in 1-5 minutes</div>
       </section>
 
-      {/* ── STATS BAR ─────────────────────────────────── */}
-      <div className={styles.statsBar}>
+      {/* ── TRUST BAR (moved above hero) ─────────────────────────────────── */}
+      <div className={styles.statsBar} style={{ borderBottom: 'none', paddingBottom: 20 }}>
         <div className={styles.statItem}>
           <span className={styles.statNum}>
             {planCount !== null ? planCount.toLocaleString() : '—'}
