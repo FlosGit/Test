@@ -94,10 +94,10 @@ export default function Home() {
       <section className={styles.heroSection} style={{ padding: '80px 24px 60px', textAlign: 'center', maxWidth: 720, margin: '0 auto' }}>
         <div style={{ fontSize: 11, fontWeight: 700, letterSpacing: 2.5, textTransform: 'uppercase', color: 'rgba(200,169,110,0.6)', marginBottom: 16 }}>AI-Powered Fitness & Nutrition</div>
         <h1 style={{ fontSize: 'clamp(32px, 6vw, 56px)', fontWeight: 900, lineHeight: 1.1, marginBottom: 20, color: '#fff' }}>
-          Your body. Your schedule.<br />Your <span style={{ color: '#c8a96e' }}>personalized plan</span>.
+          AI-built fitness plans.<br /><span style={{ color: '#c8a96e' }}>Delivered in minutes.</span>
         </h1>
         <p style={{ fontSize: 16, color: 'rgba(255,255,255,0.5)', lineHeight: 1.7, marginBottom: 32, maxWidth: 540, margin: '0 auto 32px' }}>
-          Get a fully personalized AI training or nutrition plan built from your exact stats — body data, schedule, equipment, goals. Free. Delivered in minutes.
+          Fully personalized training & nutrition plans from your exact body data, schedule, and goals. No subscription. No trainer fees. Just your plan, ready instantly.
         </p>
         <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap', marginBottom: 24 }}>
           <Link to="/form/training" style={{ display: 'inline-block', padding: '16px 32px', borderRadius: 50, background: 'var(--gold)', color: '#000', fontSize: 14, fontWeight: 800, letterSpacing: 1, textDecoration: 'none', boxShadow: '0 8px 28px rgba(200,169,110,0.35)', transition: 'transform 0.2s' }}
