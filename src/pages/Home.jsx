@@ -301,6 +301,10 @@ export default function Home() {
             </div>
           </div>
           <div className={styles.formLinks}>
+            <div style={{ fontSize: 12, color: 'rgba(255,255,255,0.35)', marginBottom: 12, textAlign: 'center', lineHeight: 1.6 }}>
+              <strong style={{ color: 'rgba(255,255,255,0.55)' }}>Are you taking Ozempic, Wegovy, or similar?</strong> Choose GLP-1 plans.<br />
+              Otherwise, pick Standard plans below.
+            </div>
             <Link to="/form/glp1" className={styles.formLink} style={{ borderColor: 'rgba(109,184,138,0.25)', background: 'rgba(109,184,138,0.03)' }}>
               <span className={styles.formLinkTitle} style={{ color: '#6db88a' }}>💊 GLP-1 Training Plan</span>
               <span className={styles.formLinkSub}>Preserve muscle while on Ozempic / Wegovy →</span>
