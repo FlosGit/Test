@@ -312,45 +312,52 @@ export default function HeroScroll({ trainingPath, nutritionPath, glp1Path, glp1
             padding:'0 16px', opacity:0, willChange:'opacity, transform',
             width:'100%', boxSizing:'border-box',
           }} className="hero-cta-row">
-            <Link to={glp1Path} style={{
+            <Link to={trainingPath} style={{
               display:'inline-flex', alignItems:'center', gap:6,
-              padding:'12px clamp(14px, 4vw, 26px)',
+              padding:'12px clamp(16px, 4vw, 28px)',
               borderRadius:50, fontFamily:'Montserrat, sans-serif',
-              fontSize:'clamp(10px,2.5vw,12px)', fontWeight:700, letterSpacing:'1.5px',
+              fontSize:'clamp(11px,2.5vw,13px)', fontWeight:800, letterSpacing:'1.5px',
               textTransform:'uppercase', textDecoration:'none', cursor:'pointer',
-              background:'linear-gradient(135deg, #4a9e68, #6db88a)',
-              color:'#fff', boxShadow:'0 8px 28px rgba(100,180,130,0.35)',
+              background:'linear-gradient(135deg, #c8a96e, #d4b97e)',
+              color:'#000', boxShadow:'0 8px 28px rgba(200,169,110,0.35)',
               transition:'transform 0.2s ease, box-shadow 0.2s ease', whiteSpace:'nowrap',
             }}
-              onMouseEnter={e => { e.currentTarget.style.transform='translateY(-2px)'; e.currentTarget.style.boxShadow='0 12px 36px rgba(100,180,130,0.5)' }}
-              onMouseLeave={e => { e.currentTarget.style.transform='translateY(0)'; e.currentTarget.style.boxShadow='0 8px 28px rgba(100,180,130,0.35)' }}
-            >💊 GLP-1 Training Plan →</Link>
-            <Link to={glp1NutritionPath} style={{
+              onMouseEnter={e => { e.currentTarget.style.transform='translateY(-2px)'; e.currentTarget.style.boxShadow='0 12px 36px rgba(200,169,110,0.5)' }}
+              onMouseLeave={e => { e.currentTarget.style.transform='translateY(0)'; e.currentTarget.style.boxShadow='0 8px 28px rgba(200,169,110,0.35)' }}
+            >Get Training Plan →</Link>
+            <Link to={nutritionPath} style={{
               display:'inline-flex', alignItems:'center', gap:6,
-              padding:'12px clamp(14px, 4vw, 24px)',
+              padding:'12px clamp(16px, 4vw, 28px)',
               borderRadius:50, fontFamily:'Montserrat, sans-serif',
-              fontSize:'clamp(10px,2.5vw,12px)', fontWeight:700, letterSpacing:'1.5px',
+              fontSize:'clamp(11px,2.5vw,13px)', fontWeight:800, letterSpacing:'1.5px',
               textTransform:'uppercase', textDecoration:'none', cursor:'pointer',
-              background:'rgba(109,184,138,0.08)', color:'#6db88a',
-              border:'1px solid rgba(109,184,138,0.3)',
-              transition:'transform 0.2s ease, background 0.2s ease', whiteSpace:'nowrap',
+              background:'transparent', color:'#c8a96e',
+              border:'1.5px solid rgba(200,169,110,0.5)',
+              transition:'transform 0.2s ease, background 0.2s ease, border-color 0.2s ease', whiteSpace:'nowrap',
             }}
-              onMouseEnter={e => { e.currentTarget.style.transform='translateY(-2px)'; e.currentTarget.style.background='rgba(109,184,138,0.15)' }}
-              onMouseLeave={e => { e.currentTarget.style.transform='translateY(0)'; e.currentTarget.style.background='rgba(109,184,138,0.08)' }}
-            >💊 GLP-1 Nutrition Plan →</Link>
-            <Link to={trainingPath} style={{
-              display:'inline-flex', alignItems:'center',
-              padding:'10px clamp(12px, 3vw, 20px)',
-              borderRadius:50, fontFamily:'Montserrat, sans-serif',
-              fontSize:'clamp(9px,2vw,10px)', fontWeight:600, letterSpacing:'1.5px',
-              textTransform:'uppercase', textDecoration:'none', cursor:'pointer',
-              background:'transparent', color:'rgba(255,255,255,0.2)',
-              border:'1px solid rgba(255,255,255,0.08)',
-              transition:'all 0.2s ease', whiteSpace:'nowrap',
+              onMouseEnter={e => { e.currentTarget.style.transform='translateY(-2px)'; e.currentTarget.style.background='rgba(200,169,110,0.08)'; e.currentTarget.style.borderColor='#c8a96e' }}
+              onMouseLeave={e => { e.currentTarget.style.transform='translateY(0)'; e.currentTarget.style.background='transparent'; e.currentTarget.style.borderColor='rgba(200,169,110,0.5)' }}
+            >Get Nutrition Plan →</Link>
+          </div>
+          <div style={{
+            position:'absolute', zIndex:20, bottom:'calc(4vh - 52px)',
+            display:'flex', alignItems:'center', justifyContent:'center', gap:10,
+            padding:'8px 16px', borderRadius:10,
+            background:'rgba(109,184,138,0.06)', border:'1px solid rgba(109,184,138,0.2)',
+            fontSize:'clamp(9px,1.8vw,10px)', color:'#6db88a', fontWeight:600, letterSpacing:'0.5px',
+            fontFamily:'Montserrat, sans-serif', whiteSpace:'nowrap',
+            opacity:0, willChange:'opacity',
+            animation:'fadeIn 0.6s ease 0.8s both',
+          }}>
+            <span>💊</span>
+            <span>On GLP-1 medication?</span>
+            <Link to={glp1Path} style={{
+              color:'#6db88a', textDecoration:'underline', fontWeight:700,
+              transition:'opacity 0.2s',
             }}
-              onMouseEnter={e => { e.currentTarget.style.color='rgba(200,169,110,0.7)'; e.currentTarget.style.borderColor='rgba(200,169,110,0.25)' }}
-              onMouseLeave={e => { e.currentTarget.style.color='rgba(255,255,255,0.2)'; e.currentTarget.style.borderColor='rgba(255,255,255,0.08)' }}
-            >Standard Plans</Link>
+              onMouseEnter={e => e.currentTarget.style.opacity='0.7'}
+              onMouseLeave={e => e.currentTarget.style.opacity='1'}
+            >Specialized plans here</Link>
           </div>
 
           {/* Scroll hint */}
