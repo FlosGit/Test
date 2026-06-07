@@ -266,11 +266,11 @@ export default function HeroScroll({ trainingPath, nutritionPath, glp1Path, glp1
                 fontSize:'clamp(11px,1.3vw,13px)', fontWeight:400, letterSpacing:'3px',
                 textTransform:'uppercase', color:'rgba(255,255,255,0.45)',
                 animation:'fadeUp 1.1s ease 0.6s both',
-              }}>Your Body. Your System. Your Results.</div>
+              }}>AI-Generated Training & Nutrition Plans</div>
               <div style={{
                 fontSize:'clamp(10px,1.1vw,12px)', fontWeight:300, letterSpacing:'2px',
                 color:'rgba(200,169,110,0.6)', animation:'fadeUp 1.1s ease 1.1s both',
-              }}>AI-powered fitness &amp; nutrition — now with GLP-1 muscle preservation plans</div>
+              }}>Built from your exact body data · Delivered in 1–5 minutes · Used by 400+ people</div>
             </div>
           </div>
 
